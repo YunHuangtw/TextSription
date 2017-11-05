@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<title>Sign up</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+th{font-size:20px; padding-left: 20px}
+td{font-size:18px; padding-left: 20px}
+#logo{
+    width:100px;
+    position: relative;
+    left:900px;
+    top:5px;
+}
+
+</style>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-red w3-card w3-left-align w3-large">
+    <a href="index.html"><img id="logo" src="logo.png"/></a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-white">My Account</a>
+    <a href="explore.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Explore</a>
+    <a href="institution.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Search</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-padding-large">Explore</a>
+  </div>
+</div>
+
+<!--header-->
+<header class="w3-container w3-red w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Sign Up</h1>
+    <div class="w3-content">
+      <p class="w3-large"> Name:
+        <input class="w3-input" type="text" style="width: 1000px" placeholder="Type your name."></p>
+      <p class="w3-large"> Email:
+        <input class="w3-input" type="text" style="width: 1000px" placeholder="Type your email."></p>
+        <p class="w3-large"> Password:
+          <input class="w3-input" type="password" style="width: 1000px" placeholder="Type your password."></p>
+        <p class="w3-large"> Confirm the password:
+          <input class="w3-input" type="password" style="width: 1000px" placeholder="Re-type your password."></p>
+          <br/>
+      <p class="w3-large">Institution:
+        <select class="w3-padding-large w3-button-white">
+          <option value="none">Select institution</option>
+          <option value="umd">University of Maryland, College Park</option>
+        </select></p>
+      <p class="w3-large">College:
+        <select class="w3-padding-large w3-button-white">
+          <option value="none">Select college</option>
+          <option value="clark">A. James Clark School of Engineering </option>
+          <option value="cmns">College of Computer, Mathematical and Natural Sciences</option>
+        </select></p>
+      <p class="w3-large">Major:
+        <select class="w3-padding-large w3-button-white">
+          <option value="none">Select major</option>
+          <option value="aero">Aerospace Engineering</option>
+          <option value="bio">Bioengineering</option>
+          <option value="mech">Mechanical Engineering</option>
+          <option value="cs">Computer Science</option>
+          <option value="astr">Astronomy</option>
+          <option value="math">Mathematics</option>
+        </select></p>
+      <br/>
+      <p class="w3-large"> Fields of Interest:
+        <input class="w3-input" type="text" style="width: 1000px" placeholder="Enter your interests."></p>
+      <p class="w3-large"> Payment Plan:
+          <input class="w3-input" type="text" style="width: 1000px" placeholder="Enter your payment plan for subscriptions."></p>
+    </div>
+
+    <br/><br/>
+    <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top">Submit</button>
+
+
+
+</header>
+
+
+
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-opacity">
+  <div class="w3-xlarge w3-padding-32">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+ </div>
+</footer>
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+
+</body>
+</html>
+
+
